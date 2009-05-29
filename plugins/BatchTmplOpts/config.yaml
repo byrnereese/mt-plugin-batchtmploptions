@@ -1,0 +1,31 @@
+id: BatchTmplOpts
+name: Batch Publishing Options
+description: Allows designers to set the publishing method for templates directly from the template listing screen.
+author_name: Byrne Reese
+author_link: http://www.majordojo.com/
+version: 0.9
+applications:
+  cms:
+    list_actions:
+      template:
+        publish_manual:
+          label: Publish Manually
+          order: 105 
+          code:  $BatchTmplOpts::BatchTmplOpts::Plugin::itemset_man
+        publish_static:
+          label: Publish Statically
+          order: 106
+          code:  $BatchTmplOpts::BatchTmplOpts::Plugin::itemset_stc
+        publish_pubqueue:
+          label: Publish via Publish Queue
+          order: 107
+          code:  $BatchTmplOpts::BatchTmplOpts::Plugin::itemset_vpq
+        publish_dynamic:
+          label: Publish Dynamically
+          order: 108
+          code:  $BatchTmplOpts::BatchTmplOpts::Plugin::itemset_dyn
+        publish_disable:
+          label: Disable Publishing
+          order: 109
+          code:  $BatchTmplOpts::BatchTmplOpts::Plugin::itemset_dis
+
